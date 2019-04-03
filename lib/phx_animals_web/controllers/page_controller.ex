@@ -1,0 +1,7 @@
+defmodule PhxAnimalsWeb.PageController do
+  use PhxAnimalsWeb, :controller
+
+  def index(conn, _params) do
+    render(conn, "index.html")
+  end
+end

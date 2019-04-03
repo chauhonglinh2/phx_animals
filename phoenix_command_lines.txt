@@ -1,0 +1,29 @@
+mix phx.new phx_animals
+cd phx_animals
+
+Then configure your database in config/dev.exs and run:
+
+    $ mix ecto.create
+
+Start your Phoenix app with:
+
+    $ mix phx.server
+
+You can also run your app inside IEx (Interactive Elixir) as:
+
+    $ iex -S mix phx.server
+
+
+
+Generate scaffold:
+mix phx.gen.html Dogs Dog dogs age:integer name:string dog_attr:string pack_id:integer
+
+mix ecto.migrate
+warning: function PhxAnimalsWeb.Router.Helpers.dog_path/2 is undefined or private. Did you mean one of:
+
+      * page_path/2
+      * page_path/3
+warning: function PhxAnimalsWeb.Router.Helpers.dog_path/3 is undefined or private. Did you mean one of:
+
+      * page_path/2
+      * page_path/3

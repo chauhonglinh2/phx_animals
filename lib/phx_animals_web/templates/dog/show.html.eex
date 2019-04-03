@@ -1,0 +1,28 @@
+<h1>Show Dog</h1>
+
+<ul>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @dog.age %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @dog.name %>
+  </li>
+
+  <li>
+    <strong>Dog attr:</strong>
+    <%= @dog.dog_attr %>
+  </li>
+
+  <li>
+    <strong>Pack:</strong>
+    <%= @dog.pack_id %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.dog_path(@conn, :edit, @dog) %></span>
+<span><%= link "Back", to: Routes.dog_path(@conn, :index) %></span>
